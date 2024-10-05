@@ -107,7 +107,18 @@ const updateFlavor = (index) => {
     const newFlavor = prompt("Enter new flavor:");
     if (newFlavor) {
         inventory[index].flavor = newFlavor;
+        updateInventory();}
+    const Price = prompt("Enter new Price:");
+    if (Price) {
+        inventory[index].price = Price;
         updateInventory();
+
+    }
+    const Quantity = prompt("Enter new Quantity:");
+    if (Quantity) {
+        inventory[index].quantity = Quantity;
+        updateInventory();
+
     }
 };
 const updateInventory = () => {
